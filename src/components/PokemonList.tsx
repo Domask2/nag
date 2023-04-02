@@ -43,7 +43,7 @@ const PokemonList: FC<PokemonListProps> = ({ limit = 12 }) => {
 
             <Grid container alignItems='center' justifyContent='center'>
                 <Pagination
-                    count={data && Math.ceil((data.count / limit))}
+                    count={107}
                     size='large'
                     page={page}
                     variant='outlined'

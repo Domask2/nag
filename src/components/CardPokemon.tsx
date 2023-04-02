@@ -29,7 +29,7 @@ const CardPokemon: FC<CardPokemonProps> = ({ pokemon }) => {
                               {...(!isLoading ? { timeout: 1000 } : {})}
                         >
                             <Typography variant='body2' color='text.secondary'>
-                                {data.height}
+                                Вес: {data.height} ед.
                             </Typography>
                         </Grow>
                         <Grow
@@ -38,7 +38,7 @@ const CardPokemon: FC<CardPokemonProps> = ({ pokemon }) => {
                             {...(!isLoading ? { timeout: 2000 } : {})}
                         >
                             <Typography variant='body2' color='text.secondary'>
-                                {data.weight}
+                               Рост: {data.weight} ед.
                             </Typography>
                         </Grow>
                     </CardContent>
