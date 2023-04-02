@@ -1,0 +1,41 @@
+@font-face {
+  font-family: Gumela;
+  src: url('fonts/GumelaRegular.otf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'sf-pro-regular';
+  src: url('./fonts/SFProDisplay-Regular.eot');
+  src: local('SF Pro Display Regular'), local('SFProDisplay-Regular'),
+  url('./fonts/SFProDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+  url('./fonts/SFProDisplay-Regular.woff2') format('woff2'),
+  url('./fonts/SFProDisplay-Regular.woff') format('woff'),
+  url('./fonts/SFProDisplay-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'sf-pro-bold';
+  src: url('./fonts/SFProDisplay-Bold.eot');
+  src: local('SF Pro Display Bold'), local('SFProDisplay-Bold'),
+  url('./fonts/SFProDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+  url('./fonts/SFProDisplay-Bold.woff2') format('woff2'),
+  url('./fonts/SFProDisplay-Bold.woff') format('woff'),
+  url('./fonts/SFProDisplay-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'sf-pro-light-italic';
+  src: url('./fonts/SFProDisplay-LightItalic.eot');
+  src: local('SF Pro Display LightItalic'), local('SFProDisplay-LightItalic'),
+  url('./fonts/SFProDisplay-LightItalic.eot?#iefix') format('embedded-opentype'),
+  url('./fonts/SFProDisplay-LightItalic.woff2') format('woff2'),
+  url('./fonts/SFProDisplay-LightItalic.woff') format('woff'),
+  url('./fonts/SFProDisplay-LightItalic.ttf') format('truetype');
+  font-weight: 200;
+  font-style: italic;
+}

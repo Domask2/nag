@@ -1,0 +1,59 @@
+@import 'fonts';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  outline: none;
+  font-family: 'sf-pro-regular', serif;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.pokemonLoader {
+  width: 15%;
+  height: 250px;
+  margin: 10px;
+}
+
+.cardPokemon {
+  width: 15%;
+  margin: 10px;
+  height: 250px;
+}
+
+.loader {
+  height: 40vh;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+}
+
+@media (max-width: 1200px) {
+  .cardPokemon {
+    width: 23%;
+  }
+}
+
+@media (max-width: 900px) {
+  .cardPokemon {
+    width: 30%;
+  }
+}
+
+@media (max-width: 600px) {
+  .cardPokemon {
+    width: 45%;
+  }
+}
+
+
+
+
+
+
