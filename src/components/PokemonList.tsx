@@ -11,7 +11,7 @@ const PokemonList: FC<PokemonListProps> = ({ limit = 12 }) => {
     const [offset, setOffset] = useState(0);
     const [page, setPage] = useState(1);
 
-    const { data, isLoading } = useSWR<PokemonListType, string>(
+    const { data, error, isLoading } = useSWR<PokemonListType, string>(
         `https://pokeapi.co/api/v2/pokemon?limit=${limit}&offset=${offset}`, fetcher,
     );
 
@@ -19,6 +19,8 @@ const PokemonList: FC<PokemonListProps> = ({ limit = 12 }) => {
         setPage(c);
         setOffset((c * limit) - limit);
     };
+
+    if (error) return <div className='loader'>Что-то пошло не так...</div>;
 
     return (
         <>
