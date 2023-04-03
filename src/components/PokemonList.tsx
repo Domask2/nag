@@ -1,4 +1,4 @@
-import React, { FC, useMemo, useState } from 'react';
+import React, { FC, useState } from 'react';
 import Grid from '@mui/material/Grid';
 import useSWR from 'swr';
 import Pagination from '@mui/material/Pagination';
@@ -14,8 +14,6 @@ const PokemonList: FC<PokemonListProps> = ({ limit = 12 }) => {
     const { data, isLoading } = useSWR<PokemonListType, string>(
         `https://pokeapi.co/api/v2/pokemon?limit=${limit}&offset=${offset}`, fetcher,
     );
-    
-    const count = useMemo(() => data && Math.ceil(data.count / limit),[]);
 
     const handleChange = (event: React.ChangeEvent<unknown>, c: number) => {
         setPage(c);
@@ -45,7 +43,7 @@ const PokemonList: FC<PokemonListProps> = ({ limit = 12 }) => {
 
             <Grid container alignItems='center' justifyContent='center'>
                 <Pagination
-                    count={count}
+                    count={107}
                     size='large'
                     page={page}
                     variant='outlined'
